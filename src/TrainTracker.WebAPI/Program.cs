@@ -23,7 +23,8 @@ namespace TrainTracker.WebAPI
                 try
                 {
                     var context = services.GetRequiredService<TrainTrackerContext>();
-                    context.Database.EnsureCreated(); 
+                   DBInitializer.SeedData(context);
+                     
                 }
                 catch (Exception ex)
                 {

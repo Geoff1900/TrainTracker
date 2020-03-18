@@ -1,2 +1,2 @@
 [config]
-project = src/TrainTracker.WebAPI/TrainTracker.APIWeb.csproj
+project = src/TrainTracker.WebAPI/TrainTracker.WebAPI.csproj

@@ -9,7 +9,7 @@ using TrainTracker.Core.Services;
 
 namespace TrainTracker.WebAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Persons")]
     [ApiController]
     public class PersonController : ControllerBase
     {
@@ -24,8 +24,8 @@ namespace TrainTracker.WebAPI.Controllers
             return Ok(_service.GetAll());
         }
 
-        [HttpGet]
-        [Route("{Id}")]
+        [HttpGet("{Id:int}")]
+
         public ActionResult<Person> GetById(int Id)
         {
             var person = _service.FindById(Id);
